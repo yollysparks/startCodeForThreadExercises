@@ -111,7 +111,7 @@ public class TextWriterForm extends javax.swing.JFrame {
   }//GEN-LAST:event_btnNewLineActionPerformed
 
   private void txtNewLineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNewLineActionPerformed
-    // TODO add your handling code here:
+    addLine();// TODO add your handling code here:
   }//GEN-LAST:event_txtNewLineActionPerformed
 
   /**

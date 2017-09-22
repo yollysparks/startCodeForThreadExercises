@@ -2,8 +2,8 @@ package day2.deadlock;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-
+//both methods for get resource number and get resource word are locked
+//the program will run normally
 public class Tester {
   public static void main(String[] args) {
     

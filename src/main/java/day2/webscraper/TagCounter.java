@@ -4,8 +4,10 @@ import java.io.IOException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
-
-public class TagCounter {
+ /*
+  extending with Thread makes the run method runnable
+  */
+public class TagCounter extends Thread {
   String url;
   String title;
   int h1Count,h2Count, divCount, bodyCount;
@@ -16,7 +18,8 @@ public class TagCounter {
   /*
   Connect to the URL and count the number of h1, h2, div and body Tags
   */
-  public void run(){
+  @Override
+  public void  run(){
     Document doc;
     try {
       doc = Jsoup.connect(url).get();

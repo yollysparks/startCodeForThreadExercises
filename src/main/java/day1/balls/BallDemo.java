@@ -107,8 +107,8 @@ public class BallDemo extends javax.swing.JFrame {
   private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
     Random r = new Random();
     Ball ball = new Ball(canvas, new Color(r.nextInt(256),r.nextInt(256),r.nextInt(256),r.nextInt(256)));
-    ball.run();
-    balls.add(ball);
+    ball.start();//initially had run() which was referencing the methos and not the thread
+    balls.add(ball);//i changed the run() to start for it to excecute the thread
   }//GEN-LAST:event_btnStartActionPerformed
 
   private void btnStart1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStart1ActionPerformed
